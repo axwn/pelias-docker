@@ -39,9 +39,6 @@
     "adminLookup": {
       "enabled": true
     },
-    "blacklist": {
-      "files": []
-    },
     "geonames": {
       "datapath": "/data/geonames",
       "countryCode": "US"

@@ -36,7 +36,6 @@ services:
     volumes:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
-      - "./blacklist/:/data/blacklist"
   whosonfirst:
     image: pelias/whosonfirst:master
     container_name: pelias_whosonfirst
@@ -44,7 +43,6 @@ services:
     volumes:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
-      - "./blacklist/:/data/blacklist"
   openstreetmap:
     image: pelias/openstreetmap:master
     container_name: pelias_openstreetmap
@@ -52,7 +50,6 @@ services:
     volumes:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
-      - "./blacklist/:/data/blacklist"
   openaddresses:
     image: pelias/openaddresses:master
     container_name: pelias_openaddresses
@@ -60,7 +57,6 @@ services:
     volumes:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
-      - "./blacklist/:/data/blacklist"
   transit:
     image: pelias/transit:master
     container_name: pelias_transit
@@ -75,7 +71,6 @@ services:
     volumes:
       - "./pelias.json:/code/pelias.json"
       - "${DATA_DIR}:/data"
-      - "./blacklist/:/data/blacklist"
   polylines:
     image: pelias/polylines:master
     container_name: pelias_polylines
